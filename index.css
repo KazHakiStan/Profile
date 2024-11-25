@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --black-color: rgb(4,4,4);
+    --red-color: #ba5a31;
+    --green-color: #69dc9e;
+    --white-color: #ffffff;
+    --orange-color: #e59f71;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    margin: 0;
+    background-color: var(--black-color);
+}
+
+#main {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 900px;
+    align-items: end;
+}
+
+#ruka {
+    position: absolute;
+    height: inherit;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+    height: 10vh;
+}
+
+.icon {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 2.5vh;
+    background-color: var(--white-color);
+    margin-left: 1.5vw;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+.icon:hover {
+    width: 5.5vh;
+    height: 5.5vh;
+    border-radius: 2.75vh;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+#about {
+    text-align: end;
+    width: fit-content;
+    margin-right: 10vw;
+}
+
+#about h1 {
+    color: var(--white-color);
+    font-size: 5vh;
+}
+
+#about p {
+    color: var(--white-color);
+    font-size: 3vh;
+}
+
+#skills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 30vw;
+}
+
+.skill {
+    display: flex;
+    flex-flow: row;
+    width: fit-content;
+    align-items: center;
+    border-radius: 2vh;
+    border-color: var(--white-color);
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.skill a {
+    color: var(--white-color);
+    margin-left: 1vw;
+}
+
+.skill-img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 1.5vh;
+    overflow: hidden;
+}
+
+.skill-img img {
+    width: 100%;
+}
+
+#education {
+    display: flex;
+    flex-flow: row;
+    height: fit-content;
+    justify-content: space-around;
+    padding: 10vh;
+}
+
+.facility {
+    width: 25vw;
+    height: 40vh;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.fac-main {
+    display: flex;
+    flex-flow: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60%;
+}
+
+#bsu {
+    background-color: var(--green-color);
+}
+
+#pjatk {
+    background-color: var(--red-color);
+}
+
+#bsu .fac-main {
+    background-image: url("/static/img/bsu.jpg");
+}
+
+#pjatk .fac-main {
+    background-image: url("/static/img/pjatk.png");
+}
+
+.fac-header {
+    margin-left: 10%;
+    margin-top: 5vh;
+    width: fit-content;
+    display: flex;
+    flex-flow: row;
+    width: 80%;
+    height: 7vh;
+    border-radius: 3vh;
+    background-color: var(--black-color);
+    align-items: center;
+}
+
+.fac-header img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 2.5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.fac-header a {
+    padding: 1%;
+    color: var(--white-color);
+}
+
+#portfolio {
+    height: 50vh;
+    padding: 10vh;
+}
+
+#slider {
+    display: flex;
+    flex-flow: column;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    height: 100%;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.slider-item {
+    position: relative;
+    width: 20%;
+    height: inherit;
+    background-color: var(--green-color);
+    transition: width .5s ease;
+}
+
+.slider-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.slider-item:hover {
+    width: 80%;
+}
+
+.slider-item:hover img{
+    opacity: .2;
+}
+
+.slider-item-descr {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 5%;
+}
+
+.slider-item h4 {
+    width: fit-content;
+    color: var(--black-color);
+}
+
+.slider-item p {
+    width: fit-content;
+}
