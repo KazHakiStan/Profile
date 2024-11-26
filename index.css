@@ -120,8 +120,9 @@ header {
 .facility {
     width: 25vw;
     height: 40vh;
-    border-radius: 80px;
+    border-radius: 5vw;
     overflow: hidden;
+    font-size: 1vw;
 }
 
 .fac-main {
@@ -201,6 +202,7 @@ header {
     height: inherit;
     background-color: var(--green-color);
     transition: width .5s ease;
+    padding-right: 5%;
 }
 
 .slider-item img {
