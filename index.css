@@ -61,7 +61,18 @@ header {
 #about {
     text-align: end;
     width: fit-content;
-    margin-right: 10vh;
+    margin-right: 10vw;
+    animation: about 1.2s ease-out;
+}
+
+@keyframes about {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 #about h1 {
@@ -78,6 +89,19 @@ header {
     display: inline-flex;
     flex-wrap: wrap;
     width: 30vw;
+    justify-content: end;
+    animation: skills 1.2s ease-out;
+}
+
+@keyframes skills {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .skill {
@@ -123,6 +147,17 @@ header {
     border-radius: 5vw;
     overflow: hidden;
     font-size: 1vw;
+    animation: facility 0.8s ease-in-out;
+}
+
+@keyframes facility {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .fac-main {
