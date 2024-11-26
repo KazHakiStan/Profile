@@ -141,11 +141,11 @@ header {
 }
 
 #bsu .fac-main {
-    background-image: url("/static/img/bsu.jpg");
+    background-image: url("./static/img/bsu.jpg");
 }
 
 #pjatk .fac-main {
-    background-image: url("/static/img/pjatk.png");
+    background-image: url("./static/img/pjatk.png");
 }
 
 .fac-header {
