@@ -256,6 +256,7 @@ header {
 
 .slider-item:hover img{
     opacity: .2;
+    pointer-events: none;
 }
 
 .slider-item-descr {
